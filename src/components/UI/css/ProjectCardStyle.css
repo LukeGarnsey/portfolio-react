@@ -1,0 +1,25 @@
+.image-container {
+  width: '400px';
+  height: '250px';
+  position: relative;
+  display: inline-block;
+}
+img {
+  width: '100%';
+  height: '100%';
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
