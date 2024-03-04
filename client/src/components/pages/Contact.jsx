@@ -14,10 +14,11 @@ export default function Contact(){
   const handleSubmit = async (e) =>{
     e.preventDefault();
     try{
+      console.log(formData);
       const response = await fetch('/send-email', {
         method: 'POST',
         headers: {
-          'Content-Type': 'aplication/json'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       });
