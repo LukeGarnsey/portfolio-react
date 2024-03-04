@@ -37,9 +37,12 @@ export default function Contact(){
     <div>
       <h3>About me</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
-        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required />
-        <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" required />
+      <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
+        <label htmlFor="email">Email address:</label>
+        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required />
+        <label htmlFor="message">Message:</label>
+        <textarea name="message" id="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" required />
         <button type="submit">Send</button>
       </form>
     </div>
