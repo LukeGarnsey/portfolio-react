@@ -41,7 +41,6 @@
 }
 .text-app-red{
   color: #440100;
-
 }
 .text-app-blue{
   color: #5f9cc8;
@@ -58,7 +57,19 @@
 .text-app-yellow{
   color: #ffde6b;
 }
+.text-app-dark{
+  color: #2d363a;
+}
+.text-app-light{
+  color: #a9e3fd;
+}
 
+.bg-app-dark{
+  background-color: #2d363a;
+}
+.bg-app-light{
+  background-color: #a9e3fd;
+}
 .bg-app-red{
   background-color: #440100;
 
@@ -94,4 +105,12 @@
 }
 .invalid{
   outline: red solid 3px;
+}
+
+.hoverable-icon {
+  opacity: .7;
+}
+.hoverable-icon:hover {
+  opacity: 1;
+  cursor:pointer;
 }

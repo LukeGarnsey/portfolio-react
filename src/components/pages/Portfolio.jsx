@@ -1,39 +1,36 @@
 import ProjectCard from "../UI/ProjectCard";
-import { passwordGenerator, questions, weatherDashboard, workDay } from "../../images/work";
-
+import { passwordApp, weatherApp, questionsApp, workDayApp } from "../../assets/PortfolioObjects";
 export default function Portfolio(){
   return (
     <div>
-      <h1 className="py-1">Portfolio</h1>
+      <h1 className="">Portfolio</h1>
       <div className="container">
-        <div className="row g-2 pb-4 justify-content-sm-center">
-          <div className="col-sm">
-            <ProjectCard image={questions}></ProjectCard>
+        <div className="row g-4 pb-4 justify-content-left">
+          <div style={styles.col}  className={columnClasses}>
+            <ProjectCard app={passwordApp}></ProjectCard>
           </div>
-          <div className="col-sm">
-          <ProjectCard image={passwordGenerator}></ProjectCard>
-          </div>
-        </div>
-
-        <div className="row g-2 pb-4">
-          <div className="col-sm">
-            <ProjectCard image={weatherDashboard}></ProjectCard>
-          </div>
-          <div className="col-sm">
-          <ProjectCard image={workDay}></ProjectCard>
+          <div style={styles.col}  className={columnClasses}>
+          <ProjectCard app={weatherApp}></ProjectCard>
           </div>
         </div>
 
         <div className="row g-2 pb-4">
-          <div className="col-sm">
-            One of two
+          <div style={styles.col}  className={columnClasses}>
+            <ProjectCard app={questionsApp}></ProjectCard>
           </div>
-          <div className="col-sm">
-            One of two
+          <div style={styles.col}  className={columnClasses}>
+          <ProjectCard app={workDayApp}></ProjectCard>
           </div>
         </div>
+
 
       </div>
     </div>
   );
+}
+const columnClasses = "col-md-6 col-sm";
+const styles = {
+  col : {
+    width:'400px',
+  }
 }

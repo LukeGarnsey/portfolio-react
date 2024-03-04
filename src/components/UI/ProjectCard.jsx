@@ -1,22 +1,20 @@
-import './css/ProjectCardStyle.css';
-export default function ProjectCard({image}){
+import svg from '../../assets/images/icons/github-mark-white.svg';
+import './css/projectCardStyle.css';
+export default function ProjectCard({app}){
   return (
-    <div className="container image-container" style={styles.div}>
-      <div className="overlay" style={styles.img}>
-        <h4>Title</h4>
-        <a className='icon-link'>github</a>
+    <div className="container image-container">
+      
+      <div className="overlay font-stmreg portfolio-image">
+        <a className='hoverable-icon title-overlay text-app-yellow' href={app.githubURL} target='_blank'>
+          {app.title}</a>
+        <div className='icon-container'>
+          <a href={app.githubURL} target='_blank'><img className='hoverable-icon img-overlay' src={svg} /></a>
+        </div>
+        <p className='stack-overlay text-app-yellow'>MERN Stack</p>
+        
       </div>
-      <img src={image} style={styles.img}></img>
+      <img className='portfolio-image' src={app.image}/>
+      
     </div>
   );
-}
-const styles = {
-  div:{
-    width: '400px',
-    height: '250px',
-  },
-  img: {
-    width: '100%',
-    height: '100%',
-  }
 }

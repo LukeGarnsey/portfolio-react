@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 import { Outlet } from 'react-router-dom'
 import NavHeader from './components/NavHeader'
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <NavHeader />
-      <div className='container'>
+      <div className='container my-3'>
         <Outlet />
       </div>
       {/* <div>

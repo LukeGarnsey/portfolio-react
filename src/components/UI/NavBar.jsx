@@ -1,15 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
-export default function NavBar(){
-  const currentPage = useLocation().pathname;
-  console.log(currentPage);
+import './css/navbar.css';
+
+function NavBar(){
+  
   return (
-    <nav className="navbar navbar-expand navbar-light bg-app-yellow">
+    <nav className="navbar navbar-expand navbar-light bg-app-dark py-4">
+      
       <div className="container">
-        <a className="navbar-brand" href="#">Luke Garnsey</a>
-        {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button> */}
-        {/* <div className="collapse navbar-collapse container" id="navbarNavAltMarkup"> */}
+      <div className='bg-app-light navbar-title-container'></div>
+        <h1 className='p-2 navbar-title'>Luke Garnsey</h1>
           <div className="navbar-nav">
             <Link className="nav-item nav-link" to="/">
               <span className= {CheckCurrentPage("/")}>About</span></Link>
@@ -20,7 +19,6 @@ export default function NavBar(){
             <Link className="nav-item nav-link" to="/Contact">
             <span className={CheckCurrentPage("/Contact")}>Contact</span></Link>
           </div>
-        {/* </div> */}
       </div>
     </nav>
   );
@@ -29,3 +27,4 @@ export default function NavBar(){
 function CheckCurrentPage(myURL){
   return useLocation().pathname === myURL?"bg-app-blue text-app-black p-2":"text-app-blue p-2";
 }
+export default NavBar;
