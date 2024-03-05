@@ -24,27 +24,25 @@ transporter.verify(function(error, success){
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+app.post('/send-email', async(req, res)=>{
+  try{
+    const mailOptions = {
+      to: process.env.EMAIL,
+      subject: `${req.body.name} sent message from ${req.body.email}`,
+      text: req.body.message
+    };
+    const result = await transporter.sendMail(mailOptions);
+    res.status(201).json({message:"sent"});
+  }catch(error){
+    res.status(500).json({error: 'Failed to Send Email'});
+  }
+})
+
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static(path.join(__dirname, '../client/dist')));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
-}else{
-  app.post('/send-email', async(req, res)=>{
-    try{
-      const mailOptions = {
-        to: process.env.EMAIL,
-        subject: `${req.body.name} sent message from ${req.body.email}`,
-        text: req.body.message
-      };
-      const result = await transporter.sendMail(mailOptions);
-      res.status(201).json({message:"sent"});
-    }catch(error){
-      res.status(500).json({error: 'Failed to Send Email'});
-    }
-  })
-  app.get('*', (req, res)=>{
-    res.send('here is your server');
   });
 }
 

@@ -35,16 +35,28 @@ export default function Contact(){
 
   return (
     <div>
-      <h3>About me</h3>
+      <h3>Contact</h3>
       <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
-        <label htmlFor="email">Email address:</label>
-        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required />
-        <label htmlFor="message">Message:</label>
-        <textarea name="message" id="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" required />
-        <button type="submit">Send</button>
+        <div className="form-group py-1">
+          <label htmlFor="name" className="p-1">Name:</label>
+          <input style={styles.max} className="form-control" type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required />
+        </div>
+        <div className="form-group py-1">
+          <label htmlFor="email" className="p-1">Email address:</label>
+          <input style={styles.max}  className="form-control" type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required />
+        </div>
+        <div className="form-group py-1">
+          <label htmlFor="message" className="p-1">Message:</label>
+          <textarea style={styles.max}  className="form-control" name="message" id="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" required />
+        </div>
+        <button type="submit" className="my-3">Send Email</button>
       </form>
     </div>
   );
+}
+
+const styles = {
+  max:{
+    maxWidth:'500px',
+  },
 }
