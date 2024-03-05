@@ -3,5 +3,12 @@ This repo hosts a dynamic web application built with React for the client-side i
 
 [Deployed Website](https://phenomenal-caramel-76b1b5.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### npm package
+[Vite](https://www.npmjs.com/package/vite)  
+[React](https://www.npmjs.com/package/react)  
+[DotEnv](https://www.npmjs.com/package/dotenv)  
+[Express](https://www.npmjs.com/package/express)  
+[bootstrap](https://www.npmjs.com/package/bootstrap)  
+[nodemon](https://www.npmjs.com/package/nodemon)  
+[Concurrently](https://www.npmjs.com/package/concurrently)  
+[nodemailer](https://www.npmjs.com/package/nodemailer)  
