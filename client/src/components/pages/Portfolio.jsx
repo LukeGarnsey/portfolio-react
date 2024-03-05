@@ -3,7 +3,7 @@ import { passwordApp, weatherApp, questionsApp, workDayApp } from "../../assets/
 export default function Portfolio(){
   return (
     <div>
-      <h1 className="">Portfolio</h1>
+      <h3 className="">Portfolio</h3>
       <div className="container">
         <div className="row g-4 pb-4 justify-content-left">
           <div style={styles.col}  className={columnClasses}>
