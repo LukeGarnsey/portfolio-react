@@ -3,7 +3,7 @@ This repo hosts a dynamic web application built with React for the client-side i
 
 [Deployed Website](https://phenomenal-caramel-76b1b5.netlify.app/)
 
-### npm package
+### npm packages
 [Vite](https://www.npmjs.com/package/vite)  
 [React](https://www.npmjs.com/package/react)  
 [DotEnv](https://www.npmjs.com/package/dotenv)  
