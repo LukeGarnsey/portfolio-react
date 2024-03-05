@@ -26,7 +26,7 @@ export default function Contact(){
         console.log('Email Sent');
         setFormData({name:'', email:'', message:''});
       }else{
-        console.log('Failed to send email');
+        console.log(response.message + ' Failed to send email');
       }
     }catch(error){
       console.error('Error:', error);
