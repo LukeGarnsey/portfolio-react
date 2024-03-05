@@ -1,5 +1,5 @@
 import ProjectCard from "../UI/ProjectCard";
-import { passwordApp, weatherApp, questionsApp, workDayApp } from "../../assets/PortfolioObjects";
+import { recipeFinder, weatherApp, invoicinator, workDayApp } from "../../assets/PortfolioObjects";
 export default function Portfolio(){
   return (
     <div>
@@ -7,7 +7,7 @@ export default function Portfolio(){
       <div className="container">
         <div className="row g-4 pb-4 justify-content-left">
           <div style={styles.col}  className={columnClasses}>
-            <ProjectCard app={passwordApp}></ProjectCard>
+            <ProjectCard app={recipeFinder}></ProjectCard>
           </div>
           <div style={styles.col}  className={columnClasses}>
           <ProjectCard app={weatherApp}></ProjectCard>
@@ -16,7 +16,7 @@ export default function Portfolio(){
 
         <div className="row g-2 pb-4">
           <div style={styles.col}  className={columnClasses}>
-            <ProjectCard app={questionsApp}></ProjectCard>
+            <ProjectCard app={invoicinator}></ProjectCard>
           </div>
           <div style={styles.col}  className={columnClasses}>
           <ProjectCard app={workDayApp}></ProjectCard>
