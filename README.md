@@ -1,7 +1,7 @@
 # Portfolio
 This repo hosts a dynamic web application built with React for the client-side interface and a Node.js server for handling backend functionality. It displays my projects, skills, and experiences in an interactive manner. The integration between React and Node.js allows for efficient data retrieval and rendering. It serves as a showcase of my expertise and accomplishments in web development.
 
-[Deployed Website](https://phenomenal-caramel-76b1b5.netlify.app/)
+[Deployed Website](https://lukegarnsey-2d38a10fb676.herokuapp.com/)
 
 ### npm packages
 [Vite](https://www.npmjs.com/package/vite)  
