@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Contact(){
+  const sentRef = useRef(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,7 +11,12 @@ export default function Contact(){
     const { name, value} = e.target;
     setFormData({ ...formData, [name]: value});
   };
-
+  const sent ={
+    color:'green'
+  };
+  const fail = {
+    color:'red'
+  };
   const handleSubmit = async (e) =>{
     e.preventDefault();
     try{
@@ -24,8 +30,12 @@ export default function Contact(){
       });
       if(response.ok){
         console.log('Email Sent');
+        sentRef.current.textContent = 'Email Sent';
+        Object.assign(sentRef.current.style,sent);
         setFormData({name:'', email:'', message:''});
       }else{
+        sentRef.current.textContent = 'Failed to send Email';
+        sentRef.current.style = fail;
         console.log(response.message + ' Failed to send email');
       }
     }catch(error){
@@ -50,7 +60,9 @@ export default function Contact(){
           <textarea style={styles.max}  className="form-control" name="message" id="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" required />
         </div>
         <button type="submit" className="my-3">Send Email</button>
+        
       </form>
+      <h4 ref={sentRef}></h4>
     </div>
   );
 }
@@ -59,4 +71,10 @@ const styles = {
   max:{
     maxWidth:'500px',
   },
+  sent:{
+    color:'green'
+  },
+  fail:{
+    color:'red'
+  }
 }

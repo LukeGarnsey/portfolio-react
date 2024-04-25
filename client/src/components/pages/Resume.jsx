@@ -1,4 +1,4 @@
-import resume from '../../assets/FullstackDeveloper.pdf';
+import resume from '../../assets/Garnsey_Resume_Fullstack.pdf';
 export default function Resume(){
 
   return (
