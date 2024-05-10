@@ -2,8 +2,8 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css';
+import './tailwind.css';
 import { Outlet } from 'react-router-dom'
-import NavHeader from './components/NavHeader'
 import Footer from './components/Footer';
 
 function App() {
@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-      <NavHeader />
-      <div className='container my-3'>
+      <div className=''>
         <Outlet />
       </div>
       <Footer />
+      {/* <div><a target="_blank" href="https://icons8.com/icon/67673/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div> */}
     </>
   )
 }

@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import AboutMe from './components/pages/AboutMe.jsx';
-import Portfolio from './components/pages/Portfolio.jsx';
-import Resume from './components/pages/Resume.jsx';
-import Contact from './components/pages/Contact.jsx';
+// import AboutMe from './components/pages/AboutMe.jsx';
+// import Portfolio from './components/pages/Portfolio.jsx';
+// import Resume from './components/pages/Resume.jsx';
+// import Contact from './components/pages/Contact.jsx';
+import Home from './components/pages/Home.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,20 +14,20 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AboutMe />,
+        element: <Home />,
       },
-      {
-        path: '/Portfolio',
-        element: <Portfolio />,
-      },
-      {
-        path: '/Resume',
-        element: <Resume />,
-      },
-      {
-        path: '/Contact',
-        element: <Contact />,
-      }
+      // {
+      //   path: '/Portfolio',
+      //   element: <Portfolio />,
+      // },
+      // {
+      //   path: '/Resume',
+      //   element: <Resume />,
+      // },
+      // {
+      //   path: '/Contact',
+      //   element: <Contact />,
+      // }
     ]
   }
 ]);
