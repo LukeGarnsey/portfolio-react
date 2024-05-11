@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import NavJumpItem from "../components/NavJumpItem";
 import SocialList from "../components/SocialList";
 import About from "./About";
@@ -6,10 +7,29 @@ import Projects from "./Projects";
 
 export default function Home(){
 
+  const [cursorPosition, setCursorPosition] = useState({x:0, y:0});
+
+  useEffect(()=>{
+    const updateCursorPosition = (e)=>{
+      console.log(e);
+      setCursorPosition({x:e.clientX, y:e.clientY});
+    };
+
+    document.addEventListener('mousemove', updateCursorPosition);
+    
+    return ()=>{
+      document.removeEventListener('mousemove', updateCursorPosition)
+    };
+  },[]);
+  
+  const contStyles = {
+    background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.2), transparent 80%`,
+    transition: 'background-color 0.3s ease-in-out'
+  };
   
   return (
     <>
-      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute">
+      <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style={contStyles}>
         
       </div>
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -37,8 +57,13 @@ export default function Home(){
             <Experience />
             <Projects />
 
-            <footer>
-              
+            <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+              <p>
+                Site was coded in 
+                <a href="https://code.visualstudio.com/" className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank"
+                rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)"> Visual Studio Code </a> 
+                by me. Built with Nodejs, React, and Tailwind CSS 
+              </p>
             </footer>
           </main>
         </div>

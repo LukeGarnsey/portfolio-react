@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div className='group/spotlight relative'>
         <Outlet />
       </div>
       {/* <Footer /> */}
