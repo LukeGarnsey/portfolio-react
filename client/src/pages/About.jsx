@@ -7,12 +7,16 @@ export default function About(){
             aria-label="About me">
         <SectionHeader text={"About"} />
         <div>
-          <p className="mb-4">Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an
-            <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="google.com" target="_blank" rel="noreferrer noopener" aria-label="what is this?">
-              link to work statement
-            </a>
+          <p className="mb-4">Back in 2008, I decided to try my hand at Half Life 2 modding and ended up stumbling upon a career in software development. Fast-forward to today, and I have had the privilege of building software for a 
+            <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.immersivetouch.com/" target="_blank" rel="noreferrer noopener" aria-label="Start up (opens in a new tab)"> Start-up</a>
+          , a 
+          <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.dexcom.com/en-us" target="_blank" rel="noreferrer noopener" aria-label="Large Corporation (opens in a new tab)"> Large Corporation</a>
+          , and an 
+          <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.scholastic.com/home" target="_blank" rel="noreferrer noopener" aria-label="Educational staple (opens in a new tab)"> Educational staple</a>
+          .
           </p>
-          <p className="mb-4">With a decade of experience crafting fully featured applications in various languages and specializing in the MERN stack, I am passionate about creating seamless user experiences. My diverse skill set extends beyond code to include pixel art and music composition, allowing me to infuse creativity into every project. When not immersed in development, you can find me on the golf course or spending quality time with my Shih-Tzu.</p>
+          <p className="mb-4">My main focus these days is building connected applications with an intuitive user experience. I most enjoy building software that pushes the boundary of user expectations - something that is approachable and familiar while bringing something unexpected to the table.</p>
+          <p className="mb-4">When I am not immersed in development, you can find me on the golf course, writing music, or spending quality time with my Shih-Tzu.</p>
           <p></p>
         </div>
       </section>
