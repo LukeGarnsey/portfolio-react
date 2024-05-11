@@ -4,7 +4,6 @@
 import './App.css';
 import './tailwind.css';
 import { Outlet } from 'react-router-dom'
-import Footer from './components/Footer';
 
 function App() {
   //  const [count, setCount] = useState(0)
@@ -14,7 +13,7 @@ function App() {
       <div className=''>
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
       {/* <div><a target="_blank" href="https://icons8.com/icon/67673/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div> */}
     </>
   )

@@ -8,8 +8,11 @@ export default {
     extend: {
       colors: {
         slate: {
-          '900': '#0f172a', // Adjust the hex code to match your desired color
+          '900': '#0f172a',
+          '800': '#1e293b',
+          '600': '#475569',
           '400': '#94a3b8',
+          '500': '#64748b',
           '200': '#e2e8f0'
         },
         teal: {
