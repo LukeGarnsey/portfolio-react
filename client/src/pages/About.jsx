@@ -16,7 +16,7 @@ export default function About(){
           .
           </p>
           <p className="mb-4">My main focus these days is building connected applications with an intuitive user experience. I most enjoy building software that pushes the boundary of user expectations - something that is approachable and familiar while bringing something unexpected to the table.</p>
-          <p className="mb-4">When I am not immersed in development, you can find me on the golf course, writing music, or spending quality time with my Shih-Tzu.</p>
+          <p className="mb-4">When I am not immersed in development, you can find me on the golf course, writing music, making a lasagna from scratch, or spending quality time with my Shih-Tzu.</p>
           <p></p>
         </div>
       </section>
