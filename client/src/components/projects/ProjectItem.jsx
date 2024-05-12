@@ -1,7 +1,7 @@
 import ProjectHeader3 from "./ProjectHeader3";
 
 export default function ProjectItem({text, title, link, image}){
-
+  const srcSet = `${image.src} 1x, ${image.src} 2x`;
   return (
     <>
       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -17,8 +17,7 @@ export default function ProjectItem({text, title, link, image}){
         </div>
         <img alt={image.alt} loading="lazy" width="200" height="48" decoding="async" data-nimg="1"
             className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={styles.img}
-            srcSet="images/ThinkFlashTransparent.png 1x, images/ThinkFlashTransparent.png 2x" 
-            src={image.src} />
+            srcSet={srcSet} src={image.src} />
       </div>
     </>
   );
