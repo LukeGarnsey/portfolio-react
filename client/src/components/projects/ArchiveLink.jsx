@@ -1,4 +1,4 @@
-import IconAnimateStay from "../IconAnimateStay";
+import IconAnimateStay from "../Animate/IconAnimateStay";
 
 export default function ArchiveLink(){
 

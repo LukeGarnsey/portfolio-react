@@ -1,4 +1,4 @@
-import IconAnimate from "../IconAnimate";
+import IconAnimate from "../Animate/IconAnimate";
 
 export default function ProjectHeader3({link, text}){
   const titleAriaLabel = `${text} (opens in new tab)`;

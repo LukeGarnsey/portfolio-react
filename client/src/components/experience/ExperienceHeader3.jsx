@@ -1,4 +1,4 @@
-import IconAnimate from "../IconAnimate";
+import IconAnimate from "../Animate/IconAnimate";
 
 export default function ExperienceHeader3({link, headerObject}){
   const titleAriaLabel = `${headerObject.job} at ${headerObject.company} (opens in new tab)`;

@@ -1,4 +1,4 @@
-import IconAnimate from "../IconAnimate";
+import IconAnimate from "../Animate/IconAnimate";
 
 export default function ResumeLink(){
 

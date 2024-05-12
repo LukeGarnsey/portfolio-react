@@ -1,6 +1,7 @@
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Archive from './pages/Archive.jsx';
 // import AboutMe from './components/pages/AboutMe.jsx';
 // import Portfolio from './components/pages/Portfolio.jsx';
 // import Resume from './components/pages/Resume.jsx';
@@ -16,10 +17,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: '/Portfolio',
-      //   element: <Portfolio />,
-      // },
+      {
+        path: '/Archive',
+        element: <Archive />,
+      },
       // {
       //   path: '/Resume',
       //   element: <Resume />,

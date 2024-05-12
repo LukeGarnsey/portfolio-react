@@ -10,7 +10,7 @@ export default function Projects(){
       <div>
         <ul className="group/list">
           <li className="mb-12">
-            <ProjectItem text={"This is going to describe everything about my project."} title={"A Night Most Fowl"} link={"https://www.filamentgames.com/"}
+            <ProjectItem text={"This is going to describe everything about my project."} title={"thinkFlash"} link={"https://thinkflash-0iex.onrender.com/"}
             image={{src:"images/ThinkFlashTransparent.png", alt:"Train your brain with AI built flash cards."}}/>
           </li>
           <li className="mb-12">
