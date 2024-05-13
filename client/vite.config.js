@@ -12,7 +12,12 @@ export default defineConfig({
         target: 'http://localhost:3001',
         changeOrigin: true,
         secure: false,
-      },     
+      },
+      '/lg.png': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },       
     }
   }
 })

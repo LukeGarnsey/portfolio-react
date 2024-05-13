@@ -15,7 +15,7 @@ export default function About(){
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.scholastic.com/home" target="_blank" rel="noreferrer noopener" aria-label="Educational staple (opens in a new tab)"> Educational staple</a>
           .
           </p>
-          <p className="mb-4">My main focus these days is building connected applications with an intuitive user experience. I most enjoy building software that pushes the boundary of user expectations - something that is approachable and familiar while bringing something unexpected to the table.</p>
+          <p className="mb-4"> I am passionate about solving complex problems with refined solutions. Whether it is designing solid software architecture or tweaking code to make things run smoother, I love the challenge and the satisfaction of finding the right solution.</p>
           <p className="mb-4">When I am not immersed in development, you can find me on the golf course, writing music, making a lasagna from scratch, or spending quality time with my Shih-Tzu.</p>
           <p></p>
         </div>
