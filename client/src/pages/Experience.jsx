@@ -36,7 +36,7 @@ export default function Experience(){
               } link={"https://yeticgi.com/"}/>
             </li>
             <li className="mb-12">
-              <ExperienceItem listChips={[ "C#", "Unity3D", ".Net", "Android Studio", "Java", "X-Code", "JavaScript", "SQL", "RPC" ]} yearObject={{ariaLabel:"2013 to 2016", text:"2013 - 2016"}} 
+              <ExperienceItem listChips={[ "C#", "Unity3D", ".Net", "Android Studio", "Java", "X-Code", "JavaScript", "SQL" ]} yearObject={{ariaLabel:"2013 to 2016", text:"2013 - 2016"}} 
               headerObject={{job:"Lead Engineer", company:"Underbite Games"}} body={
                 "Lead the development and deployment of desktop, web, and mobile applications across various projects for clients such as R&R Games and Ninja Division. Collaborated closely with engineering teams, facilitated knowledge sharing, and spearheaded the creation of internal tools. Engaged with cross-functional teams and clients to transform design concepts into rich, immersive digital solutions."
               } link={"https://store.steampowered.com/search/?publisher=Underbite%20Games"}/>
