@@ -40,8 +40,15 @@ export default function Home(){
                 Site was coded in 
                 <a href="https://code.visualstudio.com/" className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank"
                 rel="noreferrer noopener" aria-label="Visual Studio Code (opens in a new tab)"> Visual Studio Code </a> 
-                by me. Built with Nodejs, React, and Tailwind CSS 
+                by me. Built with 
+                <a href="https://nodejs.org/en" className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank"
+                rel="noreferrer noopener" aria-label="NodeJS (opens in a new tab)"> NodeJS</a>, <a href="https://react.dev/" className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank"
+                rel="noreferrer noopener" aria-label="React (opens in a new tab)"> React </a>
+                , and <a href="https://tailwindcss.com/" className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300" target="_blank"
+                rel="noreferrer noopener" aria-label="Tailwind CSS (opens in a new tab)"> Tailwind CSS</a>
+                , deployed with Heroku.
               </p>
+              
             </footer>
           </main>
         </div>

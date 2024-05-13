@@ -35,10 +35,12 @@ export default function ArchiveItem({year, project, madeAt, builtWithChips, link
             <td className="hidden py-4 align-top sm:table-cell">
                 <ul className="translate-y-1">
                     <li className="mb-1 flex items-center">
-                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm" href={link} target="_blank" rel="noreferrer noopener" aria-label={label}>
-                            {link}
-                            <IconAnimate />
-                        </a>
+                        { link !== undefined && (
+                            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm" href={link} target="_blank" rel="noreferrer noopener" aria-label={label}>
+                                {link}
+                                <IconAnimate />
+                            </a>
+                        )}
                     </li>
                 </ul>
             </td>
